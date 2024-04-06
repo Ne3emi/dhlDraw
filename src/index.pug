@@ -3,29 +3,14 @@ doctype 1.1
 html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en")
   head
  
-    //- Content Security Policy
-    include ./partials/csp.pug
-
-    //- SEO
-    include ./partials/seo.pug
-
-    //- Open Graph
-    include ./partials/open-graph.pug
-
-    //- PWA
-    include ./partials/webapp.pug
 
     //- Favicons
     <!-- webpackIgnore: true -->
     link(rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon")
 
 
-    //- Google Tag Manager
-    include ./partials/gtm-script.html
-
   body
-    //- Google Tag Manager (noscript)
-    include ./partials/gtm-noscript.html
+
 
     #app
       include ./pages/landing.pug
