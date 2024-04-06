@@ -38,6 +38,9 @@ module.exports = merge(baseWebpackConfig, {
     chunkFilename: 'assets/js/[name].[chunkhash:8].chunk.js',
     publicPath: '/'
   },
+  node: {
+    __filename: true  // This mocks the Node.js __filename variable in your bundle
+  },
   plugins: [
     new Webpack.DefinePlugin(clientEnv.stringified),
     new Webpack.optimize.ModuleConcatenationPlugin(),
