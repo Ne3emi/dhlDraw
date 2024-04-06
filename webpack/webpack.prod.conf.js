@@ -39,7 +39,8 @@ module.exports = merge(baseWebpackConfig, {
     publicPath: '/'
   },
   node: {
-    __filename: true  // This mocks the Node.js __filename variable in your bundle
+    __filename: true,  // This mocks the Node.js __filename variable in your bundle,
+    __dirname: true    // Similarly handle __dirname if needed
   },
   plugins: [
     new Webpack.DefinePlugin(clientEnv.stringified),
