@@ -43,7 +43,9 @@ import SoundEffects from '@js/SoundEffects';
 
   const soundEffects = new SoundEffects();
   const MAX_REEL_ITEMS = 40;
-  const CONFETTI_COLORS = ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'];
+  // const CONFETTI_COLORS = ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'];
+  const CONFETTI_COLORS = ['#D40511', '#E6605C', '#AA0411', '#FFFFFF ', '#000000', '#999999'];
+
   let confettiAnimationId;
 
   /** Confeetti animation instance */
